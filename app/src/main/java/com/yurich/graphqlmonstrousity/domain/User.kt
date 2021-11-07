@@ -1,4 +1,4 @@
-package com.yurich.mapsapp.domain
+package com.yurich.graphqlmonstrousity.domain
 
 data class User(
     val id: String,

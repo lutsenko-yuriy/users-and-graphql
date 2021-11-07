@@ -1,15 +1,14 @@
-package com.yurich.mapsapp.presentation.detail
+package com.yurich.graphqlmonstrousity.presentation.detail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.yurich.mapsapp.data.network.service.PostDataSource
-import com.yurich.mapsapp.domain.Post
+import com.yurich.graphqlmonstrousity.data.network.service.PostDataSource
+import com.yurich.graphqlmonstrousity.domain.Post
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
-import dagger.hilt.android.lifecycle.HiltViewModel
 
 class DetailViewModel @AssistedInject constructor(
     private val postDataSource: PostDataSource,

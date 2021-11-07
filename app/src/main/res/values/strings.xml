@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mapsapp</string>
+    <string name="app_name">GraphQL Monstrousity</string>
 
     <string name="tab_list">List</string>
     <string name="tab_map">Map</string>

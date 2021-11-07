@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.yurich.mapsapp.presentation.list.ListFragment"
+        android:name="com.yurich.graphqlmonstrousity.presentation.list.ListFragment"
         android:label="ListFragment"
         tools:layout="@layout/list_fragment">
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.yurich.mapsapp.presentation.detail.DetailFragment"
+        android:name="com.yurich.graphqlmonstrousity.presentation.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/detail_fragment">
 

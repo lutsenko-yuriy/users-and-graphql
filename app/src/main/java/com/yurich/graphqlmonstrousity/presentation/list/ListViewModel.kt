@@ -1,11 +1,11 @@
-package com.yurich.mapsapp.presentation.list
+package com.yurich.graphqlmonstrousity.presentation.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.yurich.mapsapp.data.network.service.PostDataSource
-import com.yurich.mapsapp.domain.Post
+import com.yurich.graphqlmonstrousity.data.network.service.PostDataSource
+import com.yurich.graphqlmonstrousity.domain.Post
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

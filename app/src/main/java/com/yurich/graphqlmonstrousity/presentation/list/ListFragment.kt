@@ -1,4 +1,4 @@
-package com.yurich.mapsapp.presentation.list
+package com.yurich.graphqlmonstrousity.presentation.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.yurich.mapsapp.R
-import com.yurich.mapsapp.domain.Post
-import com.yurich.mapsapp.presentation.list.adapter.PostsListAdapter
+import com.yurich.graphqlmonstrousity.R
+import com.yurich.graphqlmonstrousity.domain.Post
+import com.yurich.graphqlmonstrousity.presentation.list.adapter.PostsListAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

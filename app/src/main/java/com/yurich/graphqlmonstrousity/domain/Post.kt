@@ -1,4 +1,4 @@
-package com.yurich.mapsapp.domain
+package com.yurich.graphqlmonstrousity.domain
 
 data class Post(
     val id: String,

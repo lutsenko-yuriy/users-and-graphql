@@ -1,4 +1,4 @@
-package com.yurich.mapsapp
+package com.yurich.graphqlmonstrousity
 
 import org.junit.Test
 

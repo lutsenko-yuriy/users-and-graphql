@@ -1,10 +1,10 @@
-package com.yurich.mapsapp.presentation.list.adapter
+package com.yurich.graphqlmonstrousity.presentation.list.adapter
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.yurich.mapsapp.R
-import com.yurich.mapsapp.domain.Post
+import com.yurich.graphqlmonstrousity.R
+import com.yurich.graphqlmonstrousity.domain.Post
 
 class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

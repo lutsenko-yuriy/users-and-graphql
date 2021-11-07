@@ -1,7 +1,7 @@
-package com.yurich.mapsapp.di.data
+package com.yurich.graphqlmonstrousity.di.data
 
-import com.yurich.mapsapp.data.network.service.NetworkPostServiceWrapper
-import com.yurich.mapsapp.data.network.service.PostDataSource
+import com.yurich.graphqlmonstrousity.data.network.service.NetworkPostServiceWrapper
+import com.yurich.graphqlmonstrousity.data.network.service.PostDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

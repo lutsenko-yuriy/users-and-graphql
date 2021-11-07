@@ -1,4 +1,4 @@
-package com.yurich.mapsapp
+package com.yurich.graphqlmonstrousity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

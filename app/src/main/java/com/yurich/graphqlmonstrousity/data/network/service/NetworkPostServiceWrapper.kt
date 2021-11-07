@@ -1,6 +1,6 @@
-package com.yurich.mapsapp.data.network.service
+package com.yurich.graphqlmonstrousity.data.network.service
 
-import com.yurich.mapsapp.domain.Post
+import com.yurich.graphqlmonstrousity.domain.Post
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -1,12 +1,12 @@
-package com.yurich.mapsapp.presentation.list.adapter
+package com.yurich.graphqlmonstrousity.presentation.list.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.NO_POSITION
-import com.yurich.mapsapp.R
-import com.yurich.mapsapp.domain.Post
+import com.yurich.graphqlmonstrousity.R
+import com.yurich.graphqlmonstrousity.domain.Post
 
 class PostsListAdapter(
     private val listener: OnPostClickListener

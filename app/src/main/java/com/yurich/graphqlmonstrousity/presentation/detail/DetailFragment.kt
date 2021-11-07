@@ -1,4 +1,4 @@
-package com.yurich.mapsapp.presentation.detail
+package com.yurich.graphqlmonstrousity.presentation.detail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
-import com.yurich.mapsapp.R
+import com.yurich.graphqlmonstrousity.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
