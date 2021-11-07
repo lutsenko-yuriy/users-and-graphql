@@ -5,19 +5,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.navArgs
 import com.yurich.mapsapp.R
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = DetailFragment()
-    }
+    private val args: DetailFragmentArgs by navArgs()
+    @Inject
+    lateinit var detailViewModelAssistedFactory: DetailViewModel.DetailViewModelFactory
 
-    private val detailViewModel: DetailViewModel by activityViewModels()
+    private val detailViewModel: DetailViewModel by viewModels {
+        DetailViewModel.provideFactory(detailViewModelAssistedFactory, args.postId)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

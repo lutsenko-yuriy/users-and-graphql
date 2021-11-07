@@ -22,7 +22,7 @@ class PostsListAdapter(
         val vehicleViewHolder = PostViewHolder(view)
 
         vehicleViewHolder.itemView.setOnClickListener {
-            if (vehicleViewHolder.adapterPosition == NO_POSITION) {
+            if (vehicleViewHolder.bindingAdapterPosition == NO_POSITION) {
                 return@setOnClickListener
             }
             listener.onPostClicked(vehicleViewHolder.post)

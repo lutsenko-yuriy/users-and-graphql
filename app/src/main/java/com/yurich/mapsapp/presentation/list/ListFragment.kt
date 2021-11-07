@@ -5,7 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class ListFragment : Fragment(), PostsListAdapter.OnPostClickListener {
 
-    private val listViewModel: ListViewModel by activityViewModels()
+    private val listViewModel: ListViewModel by viewModels()
 
     private lateinit var postsList: RecyclerView
     private lateinit var postsAdapter: PostsListAdapter
@@ -26,7 +27,7 @@ class ListFragment : Fragment(), PostsListAdapter.OnPostClickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        return inflater.inflate(R.layout.list_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -54,7 +55,10 @@ class ListFragment : Fragment(), PostsListAdapter.OnPostClickListener {
     }
 
     override fun onPostClicked(post: Post) {
-
+        findNavController().navigate(
+            ListFragmentDirections
+                .actionListFragmentToDetailFragment(post.id)
+        )
     }
 
 }
