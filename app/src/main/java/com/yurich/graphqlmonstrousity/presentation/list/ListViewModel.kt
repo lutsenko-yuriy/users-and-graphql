@@ -20,7 +20,7 @@ class ListViewModel @Inject constructor(private val source: PostDataSource) : Vi
         viewModelScope.launch {
             privateAvailableVehiclesViewState.value?.run {
                 privateAvailableVehiclesViewState.postValue(
-                    source.getVehicles()
+                    source.getPosts()
                 )
             }
         }

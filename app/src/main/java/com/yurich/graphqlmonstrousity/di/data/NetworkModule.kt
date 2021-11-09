@@ -1,5 +1,6 @@
 package com.yurich.graphqlmonstrousity.di.data
 
+import com.apollographql.apollo.ApolloClient
 import com.yurich.graphqlmonstrousity.data.network.service.NetworkPostServiceWrapper
 import com.yurich.graphqlmonstrousity.data.network.service.PostDataSource
 import dagger.Module
@@ -17,7 +18,14 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun service(): PostDataSource =
-        NetworkPostServiceWrapper()
+    fun apolloClient(): ApolloClient =
+        ApolloClient.builder()
+            .serverUrl("https://graphqlzero.almansi.me/api")
+            .build()
+
+    @Provides
+    @Singleton
+    fun service(client: ApolloClient): PostDataSource =
+        NetworkPostServiceWrapper(client)
 
 }
